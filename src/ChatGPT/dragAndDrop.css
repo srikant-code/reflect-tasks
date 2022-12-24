@@ -1,0 +1,25 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.todo-item:hover {
+    background-color: #fafafa;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
