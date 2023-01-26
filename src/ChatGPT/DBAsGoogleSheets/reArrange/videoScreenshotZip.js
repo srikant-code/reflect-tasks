@@ -3,8 +3,9 @@
 // Here is an example of how you could implement this functionality in your React app
 import React, { useRef, useEffect } from "react";
 import JSZip from "jszip";
+// import videoFile from "./Full Unity Course - Learn Coding in C# by Building Games.mp4";
 
-function VideoScreenshotGenerator() {
+export function VideoScreenshotGenerator() {
   // Create a reference to the video element
   const videoRef = useRef(null);
 
@@ -108,7 +109,12 @@ function VideoScreenshotGenerator() {
         onPause={stopInterval}
         controls
       >
-        <source src="path/to/video.mp4" type="video/mp4" />
+        <source
+          src={
+            "https://filesamples.com/samples/video/mp4/sample_1280x720_surfing_with_audio.mp4"
+          }
+          type="video/mp4"
+        />
       </video>
       {/* This code renders a <video> element with controls, a <canvas> element that is used to generate the screenshots, a range input that can be used to seek through the video, and a button that can be clicked to download the screenshots. It also renders an <img> element for each screenshot. The videoRef, canvasRef, and imgRef references are used to access the video, canvas, and img elements, respectively. The startInterval and stopInterval functions are called when the video starts playing and stops playing, respectively, to start and stop the interval for generating screenshots. The handleSliderChange function is called when the value of the range input changes, and updates the current time of the video accordingly. The handleDownloadClick function is called when the download button is clicked, and generates a ZIP file containing all of the screenshots. */}
       <canvas ref={canvasRef} style={{ display: "none" }} />
