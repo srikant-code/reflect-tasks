@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+This project intention was to create a website/app called reflect which should give the users to reflect on their past actions and show a consolidated view of all their past activities.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
